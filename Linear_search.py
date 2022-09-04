@@ -1,7 +1,5 @@
-def linear_search():
-    element=[]
-    for i in range(1,101):
-        element.append(i)
+def linear_search(n):
+    element=list(range(1,n))
     count=0
     flag=0
     x=int(input("Number to be searched:"))
@@ -14,4 +12,4 @@ def linear_search():
     if(flag==0):
         print(str(x)+" ""not found in the list")
     print("No of iterations:"+str(count))
-linear_search()
+linear_search(50)
