@@ -20,13 +20,19 @@ def mail3_check():
         print("Your mail-id is valid")
     else:
         print("Invalid")
-print("G-mail:0\nCollege-id:1\nOrg:2")
-inp=int(input())
-if inp==0:
-    mail1_check()
-elif inp==1:
-    mail2_check()
-elif inp==2:
-    mail3_check()
-else:
-    print("Invalid input")
+def check():
+    while(True):
+        print("G-mail:0\nCollege-id=1\nOrg=2")
+        inp=int(input())
+        if inp==0:
+            mail1_check()
+        elif inp==1:
+            mail2_check()
+        elif inp==2:
+            mail3_check()
+        else:
+            print("Invalid input")
+            check()
+    return True
+    
+check()
