@@ -6,7 +6,7 @@ def number_occurences(nums):
     num_dict={}
     for num in nums:
         if num in num_dict:
-            num_dict[num]+=1
+            num_dict[num]+=1 #check whether num is already a key in the dict
         else:
             num_dict[num]=1
     return num_dict
